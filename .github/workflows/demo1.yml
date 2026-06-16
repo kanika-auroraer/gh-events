@@ -1,4 +1,4 @@
-name: Events Demo 1
+name: Events Demo
 on: 
   pull_request: 
     types: 
@@ -8,7 +8,7 @@ on:
     branches:
       - main 
       - 'dev-*'
-    paths:
+    paths-ignore:
       - '.github/workflow/*' 
 jobs:
   deploy:
